@@ -1,4 +1,4 @@
-### About
+### Reportings application
 
 The application to displays a wizard-like UI, consisting of three pages:
 
@@ -8,9 +8,7 @@ The application to displays a wizard-like UI, consisting of three pages:
 
 ### Tech Stack
 
-React, NextJS, Typescript, TailwindCSS, flowbite-react, heroicons
-
-### Folder structure
+React, NextJS, Typescript, redux-toolkit, TailwindCSS, flowbite-react, heroicons
 
 ### Commands
 
@@ -19,4 +17,11 @@ React, NextJS, Typescript, TailwindCSS, flowbite-react, heroicons
 - `pnpm build` build app
 - `pnpm lint` run lint
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Folder structure
+
+### URL's
+
+- http://localhost:3000 - starting point
+- http://localhost:3000/{id} - report details
+- http://localhost:3000/api/reports - endpoint to fetch list of reports
+- http://localhost:3000/api/reports/{id} - endpoint to fetch report by id

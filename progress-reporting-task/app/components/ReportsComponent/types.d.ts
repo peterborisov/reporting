@@ -1,0 +1,21 @@
+type Report = {
+    Id: string,
+    Name: string,
+    Extension: string,
+    Description: string,
+    CategoryId: string,
+    CategoryName: string,
+    Revision?: string,
+    CreatedBy?: string,
+    LockedBy?: string,
+    ModifiedBy?: string,
+    DateModifiedUtc?: string,
+    Favorite?: boolean,
+    CanModify?: boolean,
+    CanDelete?: boolean,
+    CanView?: boolean,
+    CreatedByUserLink?: string,
+    ModifiedByUserLink?: string,
+    IsUserLinkVisible?: boolean,
+    EnableWebReportDesigner?: boolean
+}

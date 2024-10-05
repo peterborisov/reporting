@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+"use client";
+
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Progress Reporting task",
-};
+import { Provider } from "react-redux";
+import { store } from "@/store/store";
 
 export default function RootLayout({
   children,
@@ -12,7 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="mx-44">{children}</body>
+      <body className="mx-44">
+        <Provider store={store}>{children}</Provider>
+      </body>
     </html>
   );
 }
