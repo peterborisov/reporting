@@ -1,0 +1,32 @@
+{
+  "name": "progress-reporting-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.5",
+    "@progress/telerik-react-report-viewer": "^23.24.924",
+    "flowbite-react": "^0.10.2",
+    "jquery": "^3.7.1",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-form-wizard-component": "^0.2.7",
+    "react-html-parser": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
