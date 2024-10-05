@@ -1,3 +1,5 @@
+import { DropdownComponent } from "../index";
+
 export const ExportFormatComponent = () => {
-  return <div>Export format component</div>;
+  return <DropdownComponent />;
 };
