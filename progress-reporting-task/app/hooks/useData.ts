@@ -6,8 +6,8 @@ export const useData = () => {
         return await response.json();
     });
 
-    const fetchReport = createAsyncThunk(`report`, async (Id: string) => {
-        const res = await fetch(`/api/${Id}`);
+    const fetchReport = createAsyncThunk(`report`, async (id: string) => {
+        const res = await fetch(`/api/reports/${id}`);
         return res.json();
     });
 

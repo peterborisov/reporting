@@ -4,11 +4,11 @@ import React from "react";
 import { ReportDetails } from "./ReportDetails";
 
 interface Props {
-  params: { Id: string };
+  params: { id: string };
 }
 
 const Page = ({ params }: Props) => {
-  return <ReportDetails reportId={params.Id} />;
+  return <ReportDetails reportId={params.id} />;
 };
 
 export default Page;

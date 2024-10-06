@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Breadcrumb } from "flowbite-react";
-import { BreadcrumbItems } from "./types";
+import { BreadcrumbItems } from "@types/index";
 
 export const BreadcrumbComponent: FC<BreadcrumbItems> = ({
   breadcrumbItems,

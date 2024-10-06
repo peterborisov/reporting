@@ -1,8 +1,8 @@
 "use client";
 import { FC, useEffect } from "react";
 import { Card } from "flowbite-react";
-import { useNav, useData } from "@hooks/index";
 import { useDispatch, useSelector } from "react-redux";
+import { useNav, useData } from "@hooks/index";
 import { BreadcrumbComponent, CellItem } from "@components/index";
 import type { RootState, AppDispatch } from "@/store/store";
 
@@ -18,13 +18,14 @@ export const ReportDetails: FC<Props> = ({ reportId }) => {
   const { fetchReport } = useData();
 
   useEffect(() => {
-    dispatch(fetchReport());
+    dispatch(fetchReport(reportId));
   }, [dispatch]);
 
   const state = useSelector((state: RootState) => state.reportsState.reports);
 
   //TODO: remove this .find after API bug is resolved
-  const report = state.find((item) => item.Id === reportId);
+  const report = state.find((item) => item.id === reportId);
+
   const {
     CategoryId,
     CategoryName,
@@ -32,7 +33,7 @@ export const ReportDetails: FC<Props> = ({ reportId }) => {
     DateModifiedUtc,
     Description,
     Extension,
-    Id,
+    id,
     IsUserLinkVisible,
     LockedBy,
     ModifiedBy,
@@ -52,7 +53,7 @@ export const ReportDetails: FC<Props> = ({ reportId }) => {
           <CellItem title="DateModifiedUtc" value={DateModifiedUtc} />
           <CellItem title="Description" value={Description} />
           <CellItem title="Extension" value={Extension} />
-          <CellItem title="Id" value={Id} />
+          <CellItem title="Id" value={id} />
           <CellItem title="IsUserLinkVisible" value={IsUserLinkVisible} />
           <CellItem title="LockedBy" value={LockedBy} />
           <CellItem title="ModifiedBy" value={ModifiedBy} />

@@ -1,7 +1,7 @@
 import { Card, Button } from "flowbite-react";
 import { CellItem } from "@components/index";
 
-export const ResultComponent = () => {
+export const Results = () => {
   return (
     <div className="my-10 flex justify-center">
       <Card>
@@ -9,7 +9,7 @@ export const ResultComponent = () => {
           <CellItem title={"Report"} value={"Olympic Medals Map"} />
           <CellItem title={"Format"} value={"PDF"} />
         </div>
-        <Button>Download</Button>
+        <Button className="bg-[#ce584b]">Download</Button>
       </Card>
     </div>
   );

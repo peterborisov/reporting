@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import reportsReducer from "@components/ReportsComponent/reports-slice";
+import reportsReducer from "@segments/reports/reports-slice";
 
 export const store = configureStore({
     reducer: {

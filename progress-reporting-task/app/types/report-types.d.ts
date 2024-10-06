@@ -1,5 +1,5 @@
-type Report = {
-    Id: string,
+export type Report = {
+    id: string,
     Name: string,
     Extension: string,
     Description: string,

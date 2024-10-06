@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useData } from "@/hooks";
-import { Report } from "../ReportsComponent/types";
+import { Report } from "@types/types";
 import type { RootState, AppDispatch } from "@/store/store";
 
 import {
@@ -30,7 +30,7 @@ export const ReportsTableComponent = () => {
   const reports = useSelector((state: RootState) => state.reportsState.reports);
 
   const reportDetails = (report: Report) => {
-    router.push(`/${report.Id}`);
+    router.push(`/reports/${report.id}`);
   };
 
   return (
@@ -48,14 +48,14 @@ export const ReportsTableComponent = () => {
         <TableBody className="divide-y">
           {reports.map((report: Report) => (
             <TableRow
-              key={report.Id}
+              key={report.id}
               className="bg-white dark:border-gray-700 dark:bg-gray-800"
             >
               <TableCell className="p-4">
                 <Checkbox />
               </TableCell>
               <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                {report.Id}
+                {report.id}
               </TableCell>
               <TableCell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                 {report.Name}

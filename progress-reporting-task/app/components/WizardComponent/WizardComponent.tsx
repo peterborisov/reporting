@@ -8,11 +8,7 @@ import {
   CheckCircleIcon,
 } from "@heroicons/react/24/outline";
 
-import {
-  ReportsComponent,
-  ExportFormatComponent,
-  ResultComponent,
-} from "@components/index";
+import { Reports, ExportFormat, Results } from "@segments/index";
 
 export const WizardComponent = () => {
   const handleComplete = () => {
@@ -26,19 +22,19 @@ export const WizardComponent = () => {
           title="Reportings"
           icon={<QueueListIcon className="size-6 white" />}
         >
-          <ReportsComponent />
+          <Reports />
         </FormWizard.TabContent>
         <FormWizard.TabContent
           title="Export Format"
           icon={<ArrowDownOnSquareIcon className="size-6 white" />}
         >
-          <ExportFormatComponent />
+          <ExportFormat />
         </FormWizard.TabContent>
         <FormWizard.TabContent
           title="Result"
           icon={<CheckCircleIcon className="size-6 white" />}
         >
-          <ResultComponent />
+          <Results />
         </FormWizard.TabContent>
       </FormWizard>
     </>

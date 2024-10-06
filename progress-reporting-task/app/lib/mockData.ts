@@ -2,7 +2,7 @@ export const reports =
 {
     "data": [
         {
-            "Id": "132706-f303",
+            "id": "132706-f303",
             "Name": "Olympic Medals Map",
             "Extension": ".trdp",
             "Description": "Presents map layout of the Olympic medals by national teams and associations.",
@@ -23,7 +23,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183054-f4b3",
+            "id": "183054-f4b3",
             "Name": "Invoice",
             "Extension": ".trdp",
             "Description": "Invoice report implemented using master-detail approach.",
@@ -44,7 +44,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183054-aabd",
+            "id": "183054-aabd",
             "Name": "Employee Sales Summary",
             "Extension": ".trdp",
             "Description": "Displays sales statistics for an individual employee per month.",
@@ -65,7 +65,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183054-32de",
+            "id": "183054-32de",
             "Name": "Product Sales",
             "Extension": ".trdp",
             "Description": "Crosstab summary of AdventureWorks sales, grouped by product category over a 4 year period.",
@@ -86,7 +86,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "173244-6838",
+            "id": "173244-6838",
             "Name": "Sales Summary",
             "Extension": ".trdp",
             "Description": "Display sales statistics per month.",
@@ -107,7 +107,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183053-d0c5",
+            "id": "183053-d0c5",
             "Name": "Dashboard",
             "Extension": ".trdp",
             "Description": "Performance overview of the AdventureWorks Sales Department.",
@@ -128,7 +128,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "174009-a77c",
+            "id": "174009-a77c",
             "Name": "Cars In Stock",
             "Extension": ".trdp",
             "Description": "Lists performance cars in stock at Dealer Inc.",
@@ -149,7 +149,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "173735-c748",
+            "id": "173735-c748",
             "Name": "Barcode Demo",
             "Extension": ".trdp",
             "Description": "Displays various barcode types.",
@@ -170,7 +170,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183055-ab17",
+            "id": "183055-ab17",
             "Name": "Product Line Sales",
             "Extension": ".trdp",
             "Description": "Top 10 best performing sales people and stores.",
@@ -191,7 +191,7 @@ export const reports =
             "EnableWebReportDesigner": true
         },
         {
-            "Id": "183055-9ff2",
+            "id": "183055-9ff2",
             "Name": "Sales Order Details",
             "Extension": ".trdp",
             "Description": "Details subreport for the Invoice report.",
