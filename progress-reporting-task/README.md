@@ -3,7 +3,7 @@
 The application to displays a wizard-like UI, consisting of three pages:
 
 - Reports - list of available reports in table format. On every row is go to report details button.
-- Export Format - lists all the export formats.
+- Export Format - lists all the export formats for the selected report.
 - Result - downloads the selected report in the requested export format.
 
 ### Tech Stack
@@ -39,3 +39,10 @@ React, NextJS, Typescript, redux-toolkit, TailwindCSS, flowbite-react, heroicons
 - http://localhost:3000/reports/{id} - report details
 - http://localhost:3000/api/reports - endpoint to fetch list of reports
 - http://localhost:3000/api/reports/{id} - endpoint to fetch report by id
+
+### Views
+
+<img src="./public/images/reporting-list.png" width="70%" />
+<img src="./public/images/report-details.png" width="70%" />
+<img src="./public/images/export-formats.png" width="70%" />
+<img src="./public/images/result.png" width="70%" />
