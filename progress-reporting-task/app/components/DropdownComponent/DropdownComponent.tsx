@@ -1,14 +1,27 @@
 "use client";
-
+import { FC } from "react";
 import { Dropdown } from "flowbite-react";
 
-export const DropdownComponent = () => {
+type Option = {
+  name: string;
+  localizedName: string;
+};
+
+type Options = {
+  options: Option[];
+};
+
+export const DropdownComponent: FC<Options> = ({ options }) => {
   return (
     <div className="my-10 flex justify-center">
       <Dropdown label={"Select Export format"}>
-        <Dropdown.Item>PDF</Dropdown.Item>
-        <Dropdown.Item>DOCX</Dropdown.Item>
-        <Dropdown.Item>XLSX</Dropdown.Item>
+        {options.map((option: Option) => {
+          return (
+            <Dropdown.Item key={option.name}>
+              {option.localizedName}
+            </Dropdown.Item>
+          );
+        })}
       </Dropdown>
     </div>
   );
